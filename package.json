@@ -12,5 +12,8 @@
     "backend"
   ],
   "author": "Harsh verma",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^3.6.2"
+  }
 }
