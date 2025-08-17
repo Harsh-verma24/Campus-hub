@@ -1,0 +1,16 @@
+{
+  "name": "campus-hub",
+  "version": "1.0.0",
+  "description": "A platform to connect all students of university ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "campus-connect",
+    "campus-hub",
+    "backend"
+  ],
+  "author": "Harsh verma",
+  "license": "ISC"
+}
