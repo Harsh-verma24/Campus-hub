@@ -55,5 +55,22 @@ export const getOneUser= async (req,res) =>{
     res.status(500)
    }
 }
-
+ 
+export const loginUser=async(req,res)=>{
+   const {email,password} = req.body;
+   try {
+      const user = await User.findOne({email});
+      if(!user) res.json({message:"invalid credentials"});
+      const isMatch =user.isPasswordCorrect(password);
+      if(!isMatch) res.json({message:"invalid credentials"});
+        
+      res.status(200).json({
+         message:"Login successfully",
+         user
+      })
+   } catch (error) {
+      console.log("loginUser error",error)
+    res.status(500)
+   }
+}
 
